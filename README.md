@@ -23,6 +23,9 @@
 ## Ajuda: 
   Use: ``Ajuda`` ou ``Help`` para ver todos os comandos e suas funcionalidades.
 
+## Dispositivos: 
+ APENAS WINDOWS!
+ 
 ## Baixar: 
   - [Baixar em .exe](BasicBasic.exe)
   - [Baixar em .cpp](BasicBasic.cpp)
