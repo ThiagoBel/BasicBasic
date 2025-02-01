@@ -34,9 +34,44 @@
   <h1>RECOMENDAVEL BAIXAR O .exe!</h1>
 
 ## Lançamento: 
-  - Iniciado em 29/01/2025
-  - Lançado em 31/01/2025
+  - Iniciado em 29/01/2025.
+  - Lançado em 31/01/2025.
     
+## Guia de comandos:
+  - ``cpp Main`` - Executa o arquivo Main.cpp.
+  - ``java Main`` - Executa o arquivo Main.java/class.
+  - ``py Main`` - Executa o arquivo Main.py.
+
+  se você quiser ir no jeito TRADICIONAL, use ``def.script cpp*`` para definir um script, dai você coloca o nome do arquivo quando executar o comando, dai você poderá compilar usando o comando: ``init.compile.script cpp``, se quiser trocar a versão, você pode trocar o "cpp" para **py** ou **java**.
+
+  Você pode usar o terminal (Prompt De Comandos / cmd) usando os comandos: 
+
+  - ``othe.cmd*`` - Imita o terminal uma vez.
+  - ``other.cmd-loop*`` - Imita o terminal em loop (digite stop para sair do terminal).
+  - ``other.cmd-diret*`` - Deixa você executar o terminal apenas pelo codigo, exemplo: ``other.cmd-diret*echo Hello, World!`` - Irá aparecer um texto escrito: "Hello, World!".
+
+  Você pode ver o valor de uma string usando o comando: 
+
+  - ``Show`` - Mostra o valor de uma string.
+
+  Exemplo: 
+
+  ``Show.defscriptCPP`` - Mostra o valor da string defscriptPYTHON (o nome do arquivo que eu defini).
+
+  Você pode trocar a cor do terminal usando esse comando: 
+  - ``Color`` - Troca a cor.
+
+  Exemplos:
+
+  ``Color A`` - Muda a cor para verde.
+
+  ``Color 7`` - Muda a cor para padrão.
+
+  Você pode selecionar se quer o modo escuro ou o modo claro no terminal, basta usar esses comandos: 
+
+  ``darkmode`` - Modo escuro.
+
+  ``lightmode`` - Modo claro.
 ## Creditos: 
   
   IDE: **Visual Studio Code.**
