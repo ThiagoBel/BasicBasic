@@ -34,8 +34,8 @@ int main() {
     string othercmd;
     string othercmd2;
 
+    cout << "Oi " << username << "!\n";
     while (true) {
-        cout << "Oi " << username << "!\n";
         cout << disco;
         getline(cin, user);
 
