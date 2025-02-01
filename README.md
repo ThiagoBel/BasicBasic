@@ -18,6 +18,7 @@
 - Poder usar o tasklist
 - Poder usar o Dir
 - Ter o modo escuro e o modo claro
+- Compilar codigos
 - etc.
 
 ## Ajuda: 
