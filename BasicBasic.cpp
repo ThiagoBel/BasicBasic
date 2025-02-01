@@ -35,6 +35,7 @@ int main() {
     string othercmd2;
 
     while (true) {
+        cout << "Oi " << username << "!\n";
         cout << disco;
         getline(cin, user);
 
@@ -94,6 +95,10 @@ int main() {
             cout << "other.cmd* - Imita o Prompt De Comandos (CMD).\n";
             cout << "other.cmd-loop* - Imita o Prompt De Comandos (CMD) mas em loop.\n";
             cout << "other.cmd-diret*>... - Imita o Prompt De Comandos (CMD) mas é direto.\n";
+            cout << "---------------------------\n";
+            cout << "cpp ... - Compila o C++(Cria um arquivo .exe).\n";
+            cout << "java ... - Compila o Java(Cria um arquivo .class).\n";
+            cout << "py ... - Compila o Python.\n";
             cout << "---------------------------\n";
 
         } else if (user == "exit" || user == "sair") {
@@ -438,6 +443,35 @@ int main() {
             cout << "Hola!\n";
         } else if (user == "salut") {
             cout << "Salut!\n";
+        } else if (user.find("cpp ") == 0) {
+            string cppnome = user.substr(4);
+
+            string rodarcppnome = "g++ " + cppnome + ".cpp -o " + cppnome + ".exe\n";
+            string rodarcppnome2 = cppnome + ".exe\n";
+
+            system(rodarcppnome.c_str());
+            system(rodarcppnome2.c_str());
+
+        } else if (user.find("java ") == 0) {
+            string javanome = user.substr(5);
+
+            string rodarjavanome = "javac " + javanome + ".java";
+            string rodarjavanome2 = "java " + javanome;
+
+            system(rodarjavanome.c_str());
+            system(rodarjavanome2.c_str());
+        } else if (user.find("python ") == 0) {
+            string pynome = user.substr(7);
+
+            string rodarpy = "python " + pynome + ".py";
+
+            system(rodarpy.c_str());
+        } else if (user.find("py ") == 0) {
+            string pynome = user.substr(3);
+
+            string rodarpy = "python " + pynome + ".py";
+
+            system(rodarpy.c_str());
         } else {
             cout << "Inventou comando agora? >:(" << endl;
             secretvalor = true;
