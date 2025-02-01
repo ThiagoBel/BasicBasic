@@ -8,6 +8,7 @@
 using namespace std;
 
 int main() {
+    system("title BasicBasic");
     char buf[256];
     GetCurrentDirectoryA(sizeof(buf), buf);
 
@@ -29,6 +30,9 @@ int main() {
 
     string defapp;
     string deffile;
+
+    string othercmd;
+    string othercmd2;
 
     while (true) {
         cout << disco;
@@ -55,12 +59,13 @@ int main() {
             cout << "mkdir ... - Criar uma pasta.\n";
             cout << "show ... - Mostrar o resultado da string.\n";
             cout << "clear - Limpa a tela (cls).\n";
-            cout << "tasklist - Mostra uma lista de processos em execução.\n";
+            cout << "tasklist - Mostra uma lista de processos em execucao.\n";
             cout << "info - Mostra todas as informacoes possiveis do seu computador.\n";
             cout << "newfile ... - Cria um arquivo(coloque a extencao no final).\n";
             cout << "color ... - Muda a cor do terminal.\n";
             cout << "darkmode - Modo escuro.\n";
             cout << "lightmode - Modo claro.\n";
+            cout << "credits - Mostra os creditos.\n";
             cout << "---------------------------\n";
             cout << "show.defscript* - Mostra o caminho atual.\n";
             cout << "show.path* - Mostra o caminho atual.\n";
@@ -68,23 +73,27 @@ int main() {
             cout << "show.defscriptPYTHON* - Mostra o nome do script Python.\n";
             cout << "show.defscriptJAVA* - Mostra o nome do script Java.\n";
             cout << "---------------------------\n";
-            cout << "git commit - Registra alterações no repositorio local.\n";
+            cout << "git commit - Registra alteracoes no repositorio local.\n";
             cout << "git status - Mostra o estado atual dos arquivos no repositorio.\n";
-            cout << "git clone - Cria uma copia local de um repositório remoto.\n";
+            cout << "git clone - Cria uma copia local de um repositorio remoto.\n";
             cout << "git push - Envia alteracoes locais para o repositorio remoto.\n";
             cout << "---------------------------\n";
-            cout << "version.bb - Mostrar a versão do BasicBasic.\n";
-            cout << "version.cpp* - Mostra a versão do C++ (g++).\n";
-            cout << "version.python* - Mostra a versão do Python.\n";
-            cout << "version.java* - Mostra a versão do Java(Javac não incluido).\n";
-            cout << "version.javac* - Mostra a versão do Javac(Java não incluido).\n";
-            cout << "version.java.all* - Mostra a versão do Java e do Javac.\n";
+            cout << "version.bb - Mostrar a versao do BasicBasic.\n";
+            cout << "version.cpp* - Mostra a versao do C++ (g++).\n";
+            cout << "version.python* - Mostra a versao do Python.\n";
+            cout << "version.java* - Mostra a versao do Java(Javac nao incluido).\n";
+            cout << "version.javac* - Mostra a versao do Javac(Java nao incluido).\n";
+            cout << "version.java.all* - Mostra a versao do Java e do Javac.\n";
             cout << "---------------------------\n";
-            cout << "g++ --version - Mostra a versão do C++.\n";
-            cout << "python --version - Mostra a versão do Python.\n";
-            cout << "java --version - Mostra a versão do Java.\n";
-            cout << "javac --version - Mostra a versão do Javac.\n";
-            cout << "bb --version - Mostra a versão do BasicBasic.\n";
+            cout << "g++ --version - Mostra a versao do C++.\n";
+            cout << "python --version - Mostra a versao do Python.\n";
+            cout << "java --version - Mostra a versao do Java.\n";
+            cout << "javac --version - Mostra a versao do Javac.\n";
+            cout << "bb --version - Mostra a versao do BasicBasic.\n";
+            cout << "---------------------------\n";
+            cout << "other.cmd* - Imita o Prompt De Comandos (CMD).\n";
+            cout << "other.cmd-loop* - Imita o Prompt De Comandos (CMD) mas em loop.\n";
+            cout << "other.cmd-diret*>... - Imita o Prompt De Comandos (CMD) mas é direto.\n";
             cout << "---------------------------\n";
 
         } else if (user == "exit" || user == "sair") {
@@ -92,7 +101,7 @@ int main() {
             Sleep(1000);
             cout << "Ok...\n";
             Sleep(1000);
-            cout << "Foi bom conhecer você...\n";
+            cout << "Foi bom conhecer voce...\n";
             Sleep(1000);
             break;
         } else if (user == "clear" || user == "cls") {
@@ -134,6 +143,8 @@ int main() {
             system("color 70");
         } else if (user == "ls" || user == "dir") {
             system("dir");
+        } else if (user == "username" || user == "name") {
+            cout << username << "\n";
         } else if (user.find("mkdir ") == 0) {
             string dirname = user.substr(6);
             string command = "mkdir " + dirname;
@@ -261,7 +272,7 @@ int main() {
             Sleep(1500);
             cout << "Use 'init.compile.script asm*' para compilar...\n";
             } else {
-                cout << "Eu ja te falei que não tem compilador de assembly aqui...\n";
+                cout << "Eu ja te falei que nao tem compilador de assembly aqui...\n";
                 Sleep(1000);
                 cout << "Desculpa :(\n";
             }
@@ -275,7 +286,7 @@ int main() {
             Sleep(1000);
             cout << "Desculpa mas...\n";
             Sleep(1000);
-            cout << "Não tem compilador de assembly ainda...\n";
+            cout << "Nao tem compilador de assembly ainda...\n";
             Sleep(1000);
             cout << "Lembrei agora...\n";
             Sleep(1000);
@@ -287,7 +298,7 @@ int main() {
             secretvalor = false;
             secretvalor2 = true;
         } else if ((user == "desculpa" || user == "dicupa" || user == "mal" || user == "perdao" || user == "sorry") && secretvalor2 == true) {
-            cout << "TU JA PEDIU PERDÃO RAPAZ!\nvou deletar essa mensagem agora...\n";
+            cout << "TU JA PEDIU PERDAO RAPAZ!\nvou deletar essa mensagem agora...\n";
             Sleep(2000);
             system("cls");
             secretvalor2 = false;
@@ -295,7 +306,7 @@ int main() {
         } else if ((user == "desculpa" || user == "dicupa" || user == "mal" || user == "perdao" || user == "sorry" || user == "ok" || user == "okay") && secretvalor3 == true) {
             cout << "...\n";
             Sleep(1000);
-            cout << "Quer esquecer isso não?\nvou apagar (DENOVO)\n";
+            cout << "Quer esquecer isso nao?\nvou apagar (DENOVO)\n";
             Sleep(2000);
             system("cls");
             secretvalor3 = false;
@@ -380,6 +391,53 @@ int main() {
             system("javac --version");
         } else if (user == "version.java*") {
             system("java --version");
+        } else if (user == "other.cmd*") {
+            cout << "Cpp:/CMD>";
+            getline(cin, othercmd);
+            if (!system(othercmd.c_str()) == 0) {
+                cout << "Erro!\n";
+            }
+        } else if (user == "other.cmd-loop*") {
+            cout << "Digite 'exit' para sair.\n";
+            while (true) {
+                cout << "Cpp:/CMD>";
+                getline(cin, othercmd2);
+                if (!system(othercmd2.c_str()) == 0) {
+                    cout << "Erro!\n";
+                }
+                if (othercmd2 == "exit") {
+                    cout << "Saindo...\n";
+                    break;
+                }
+            }
+        } else if (user.find("other.cmd-diret*>") == 0) {
+            string othercmddiret = user.substr(17);
+            system(othercmddiret.c_str());
+        } else if (user.find("other.cmd-diret*> ") == 0) {
+            string othercmddiret = user.substr(18);
+            system(othercmddiret.c_str());
+        } else if (user == "deus") {
+            cout << "Deus = vida.\n";
+            cout << "Deus = amor.\n";
+            cout << "Deus = grande.\n";
+            cout << "Deus = bom.\n";
+            cout << "Deus = fiel.\n";
+            cout << "Deus = TUDO.\n";
+        } else if (user == "credits") {
+            cout << "Criador: Thiago Bel\n";
+            cout << "IDE: Visual Studio Code\n";
+            cout << "Linguagem de programacao: C++\n";
+            cout << "Criador de tudo: Deus\n";
+        } else if (user == "legal") {
+            cout << ":)\n";
+        } else if (user == "ola" || user == "oi") {
+            cout << "Ola!\n";
+        } else if (user == "hello" || user == "hi") {
+            cout << "Hello!\n";
+        } else if (user == "hola") {
+            cout << "Hola!\n";
+        } else if (user == "salut") {
+            cout << "Salut!\n";
         } else {
             cout << "Inventou comando agora? >:(" << endl;
             secretvalor = true;
