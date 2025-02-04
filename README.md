@@ -41,6 +41,8 @@
   - ``cpp Main`` - Executa o arquivo Main.cpp.
   - ``java Main`` - Executa o arquivo Main.java/class.
   - ``py Main`` - Executa o arquivo Main.py.
+  - ``html Main`` - Executa o arquivo Main.html.
+  - ``htm Main`` - Executa o arquivo Main.htm.
 
   se você quiser ir no jeito TRADICIONAL, use ``def.script cpp*`` para definir um script, dai você coloca o nome do arquivo quando executar o comando, dai você poderá compilar usando o comando: ``init.compile.script cpp``, se quiser trocar a versão, você pode trocar o "cpp" para **py** ou **java**.
 
