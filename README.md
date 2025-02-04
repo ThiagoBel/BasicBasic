@@ -28,8 +28,11 @@
  APENAS WINDOWS!
  
 ## Baixar: 
-  - [Baixar em .exe](BasicBasic.exe)
-  - [Baixar em .cpp](BasicBasic.cpp)
+  <a href="BasicBasic.exe" download>Baixar em .exe</a>
+  
+  <a href="BasicBasic.cpp" download>Baixar em .cpp</a>
+
+    
 
   <h1>RECOMENDAVEL BAIXAR O .exe!</h1>
 
