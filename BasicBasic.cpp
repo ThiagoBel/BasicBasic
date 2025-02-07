@@ -32,6 +32,7 @@ int main()
     const char *username = getenv("USERNAME");
     string disco = "Cpp:/>";
     string user;
+    string version = "0.0.1";
 
     bool secretvalor = false;
     bool secretvalor2 = false;
@@ -41,18 +42,6 @@ int main()
     bool memoriaasm = false;
 
     int secretmeme;
-
-    string defscript;
-    string defscriptCPP;
-    string defscriptC;
-    string defscriptJAVA;
-    string defscriptPYTHON;
-    string defscriptASM;
-    string defscriptHTML;
-    string defscriptHTM;
-
-    string defapp;
-    string deffile;
 
     string othercmd;
     string othercmd2;
@@ -67,24 +56,6 @@ int main()
 
         if (user == "help" || user == "ajuda")
         {
-            cout << "---------------------------\n";
-            cout << "def.script cpp* - Definir um script de C++.\n";
-            cout << "def.script c* - Definir um script de C.\n";
-            cout << "def.script python* - Definir um script de Python.\n";
-            cout << "def.script java* - Definir um script de Java.\n";
-            cout << "def.script html* - Definir um script de HTML.\n";
-            cout << "def.script htm* - Definir um script de HTM.\n";
-            cout << "---------------------------\n";
-            cout << "def.app app* - Definir um aplicativo.\n";
-            cout << "---------------------------\n";
-            cout << "init.compile.script cpp* - Compilar o script definido de C++.\n";
-            cout << "init.compile.script c* - Compilar o script definido de C.\n";
-            cout << "init.compile.script python* - Compilar o script definido de Python.\n";
-            cout << "init.compile.script java* - Compilar o script definido de Java.\n";
-            cout << "init.compile.script html* - Compilar o script definido de HTML.\n";
-            cout << "init.compile.script htm* - Compilar o script definido de HTM.\n";
-            cout << "---------------------------\n";
-            cout << "init.app app* - Iniciar um aplicativo.\n";
             cout << "---------------------------\n";
             cout << "exit - sair do terminal.\n";
             cout << "exitf - sair do terminal mais rapidamente.\n";
@@ -103,21 +74,14 @@ int main()
             cout << "romancemode - Modo romance.\n";
             cout << "horrormode - Modo horror.\n";
             cout << "---------------------------\n";
-            cout << "show.defscript* - Mostra o caminho atual.\n";
             cout << "show.path* - Mostra o caminho atual.\n";
-            cout << "show.defscriptCPP* - Mostra o nome do script C++.\n";
-            cout << "show.defscriptC* - Mostra o nome do script C.\n";
-            cout << "show.defscriptPYTHON* - Mostra o nome do script Python.\n";
-            cout << "show.defscriptJAVA* - Mostra o nome do script Java.\n";
-            cout << "show.defscriptHTML* - Mostra o nome do script HTML.\n";
-            cout << "show.defscriptHTM* - Mostra o nome do script HTM.\n";
             cout << "---------------------------\n";
             cout << "git commit - Registra alteracoes no repositorio local.\n";
             cout << "git status - Mostra o estado atual dos arquivos no repositorio.\n";
             cout << "git clone - Cria uma copia local de um repositorio remoto.\n";
             cout << "git push - Envia alteracoes locais para o repositorio remoto.\n";
             cout << "---------------------------\n";
-            cout << "version.bb - Mostrar a versao do BasicBasic.\n";
+            cout << "version.bb* - Mostrar a versao do BasicBasic.\n";
             cout << "version.cpp* - Mostra a versao do C++ (g++).\n";
             cout << "version.c* - Mostra a versao do C (gcc).\n";
             cout << "version.python* - Mostra a versao do Python.\n";
@@ -135,14 +99,22 @@ int main()
             cout << "other.cmd* - Imita o Prompt De Comandos (CMD).\n";
             cout << "other.cmd-loop* - Imita o Prompt De Comandos (CMD) mas em loop.\n";
             cout << "other.cmd-diret*>... - Imita o Prompt De Comandos (CMD) mas é direto.\n";
+            cout << "cmd* ... - Imita o Prompt De Comandos (CMD) mas é direto. (2.0)\n";
             cout << "---------------------------\n";
             cout << "cpp ... - Compila o C++(Cria um arquivo .exe).\n";
             cout << "c ... - Compila o C(Cria um arquivo .exe).\n";
-            cout << "java ... - Compila o Java(Cria um arquivo .class).\n";
             cout << "py ... - Compila o Python.\n";
+            cout << "java ... - Compila o Java(Cria um arquivo .class).\n";
             cout << "html ... - Compila o HTML.\n";
             cout << "htm ... - Compila o HTM.\n";
+            cout << "js ... - Compila o Javascript (ele cria um arquivo index.html para rodar).\n";
+            cout << "javascript ... - Compila o Javascript (ele cria um arquivo index.html para rodar).\n";
             cout << "---------------------------\n";
+            cout << "new.cpp ... - Cria um arquivo de c++\n";
+            cout << "new.c ... - Cria um arquivo de c\n";
+            cout << "new.py ... - Cria um arquivo de Python\n";
+            cout << "new.java ... - Cria um arquivo de Java\n";
+            cout << "new.js ... - Cria um arquivo de Javascript\n";
         }
         else if (user == "exit" || user == "sair")
         {
@@ -270,260 +242,7 @@ int main()
         }
         else if (user == "bb --version" || user == "version.bb*")
         {
-            cout << "BasicBasic: 0.0.1\n";
-        }
-        else if (user == "def.script*")
-        {
-            cout << "Cpp:/DefinirScript>";
-            getline(cin, defscript);
-        }
-        else if (user == "def.script cpp*" || user == "def script c++")
-        {
-            cout << "Cpp:/DefinirScriptCpp>";
-            getline(cin, defscriptCPP);
-            cout << "Salvo em defscriptCPP! (" + defscriptCPP + ".cpp)\n";
-        }
-        else if (user == "def.script java*")
-        {
-            cout << "Cpp:/DefinirScriptJava>";
-            getline(cin, defscriptJAVA);
-            cout << "Salvo em defscriptJAVA! (" + defscriptJAVA + ".java)\n";
-        }
-        else if (user == "def.script html*")
-        {
-            cout << "Cpp:/DefinirScriptHTML>";
-            getline(cin, defscriptHTML);
-            cout << "Salvo em defscriptHTML! (" + defscriptHTML + ".html)\n";
-        }
-        else if (user == "def.script htm*")
-        {
-            cout << "Cpp:/DefinirScriptHTM>";
-            getline(cin, defscriptHTM);
-            cout << "Salvo em defscriptHTM! (" + defscriptHTM + ".htm)\n";
-        }
-        else if (user == "def.script python*")
-        {
-            cout << "Cpp:/DefinirScriptPython>";
-            getline(cin, defscriptPYTHON);
-            cout << "Salvo em defscriptPYTHON! (" + defscriptPYTHON + ".py)\n";
-        }
-        else if (user == "def.script c*")
-        {
-            cout << "Cpp:/DefinirScriptC>";
-            getline(cin, defscriptC);
-            cout << "Salvo em defscriptC! (" + defscriptC + ".c)\n";
-        }
-        else if (user == "init.compile.script.cpp*" || user == "compile_script c++*")
-        {
-            if (defscriptCPP.empty())
-            {
-                cout << "Nenhum script C++ foi definido, Use 'def.script cpp*' antes de compilar.\n";
-                continue;
-            }
-            string compileCPP = "g++ " + defscriptCPP + ".cpp -o " + defscriptCPP + ".exe";
-            string compileCPP2 = defscriptCPP + ".exe";
-
-            cout << "Compilando " << defscriptCPP << ".cpp\n";
-            if (system(compileCPP.c_str()) == 0)
-            {
-                cout << "Compilado com sucesso! Executando o programa...\n\n";
-                system(compileCPP2.c_str());
-                cout << "\n";
-            }
-            else
-            {
-                cout << "Erro ao compilar o script " << defscriptCPP << ".cpp.\n";
-            }
-        }
-        else if (user == "init.compile.script java*")
-        {
-            if (defscriptJAVA.empty())
-            {
-                cout << "Nenhum script Java foi definido, Use 'def.script java*' antes de compilar.\n";
-                continue;
-            }
-            string compileJAVA = "javac " + defscriptJAVA + ".java";
-            string compileJAVA2 = "java " + defscriptJAVA;
-
-            cout << "Compilando " << defscriptJAVA << ".java\n";
-            if (system(compileJAVA.c_str()) == 0)
-            {
-                cout << "Compilado com sucesso! Executando o programa...\n\n";
-                system(compileJAVA2.c_str());
-                cout << "\n";
-            }
-            else
-            {
-                cout << "Erro ao compilar o script " << defscriptJAVA << ".java.\n";
-            }
-        }
-        else if (user == "init.compile.script c*")
-        {
-            if (defscriptC.empty())
-            {
-                cout << "Nenhum script C foi definido, Use 'def.script c*' antes de compilar.\n";
-                continue;
-            }
-            string compileC = "gcc " + defscriptC + ".c -o " + defscriptC + ".exe";
-            string compileC2 = defscriptC + ".exe";
-
-            cout << "Compilando " << defscriptC << ".c\n";
-            if (system(compileC.c_str()) == 0)
-            {
-                cout << "Compilado com sucesso! Executando o programa...\n\n";
-                system(compileC2.c_str());
-                cout << "\n";
-            }
-            else
-            {
-                cout << "Erro ao compilar o script " << defscriptJAVA << ".java.\n";
-            }
-        }
-        else if (user == "init.compile.script html*")
-        {
-            if (defscriptHTML.empty())
-            {
-                cout << "Nenhum script HTML foi definido, Use 'def.script html*' antes de compilar.\n";
-                continue;
-            }
-            string compileHTML = "start " + defscriptHTML + ".html";
-
-            cout << "Compilando " << defscriptHTML << ".html\n";
-            if (system(compileHTML.c_str()) == 0)
-            {
-                cout << "Compilado com sucesso!\n\n";
-            }
-            else
-            {
-                cout << "Erro ao compilar o site " << defscriptHTML << ".html.\n";
-            }
-        }
-                else if (user == "init.compile.script htm*")
-        {
-            if (defscriptHTM.empty())
-            {
-                cout << "Nenhum script HTM foi definido, Use 'def.script htm*' antes de compilar.\n";
-                continue;
-            }
-            string compileHTM = "start " + defscriptHTM + ".htm";
-
-            cout << "Compilando " << defscriptHTM << ".htm\n";
-            if (system(compileHTM.c_str()) == 0)
-            {
-                cout << "Compilado com sucesso!\n\n";
-            }
-            else
-            {
-                cout << "Erro ao compilar o site " << defscriptHTM << ".htm.\n";
-            }
-        }
-        else if (user == "init.compile.script python*")
-        {
-            if (defscriptPYTHON.empty())
-            {
-                cout << "Nenhum script Python foi definido, Use 'def.script python*' antes de compilar.\n";
-                continue;
-            }
-            string compilePYTHON = "python " + defscriptPYTHON + ".py";
-
-            cout << "Compilando " << defscriptPYTHON << ".py\n";
-            if (system(compilePYTHON.c_str()) == 0)
-            {
-                cout << "Compilado com sucesso!\n\n";
-            }
-            else
-            {
-                cout << "Erro ao compilar o script " << defscriptPYTHON << ".py.\n";
-            }
-        }
-        else if (user == "def.app app*")
-        {
-            cout << "Cpp:/DefinirAplicativo>";
-            getline(cin, defapp);
-            cout << "Salvo em defapp! (" + defapp + ")\n";
-        }
-        else if (user == "init.app app*")
-        {
-            if (defapp.empty())
-            {
-                cout << "Nenhum aplicativo foi definido, Use 'def.app app*' antes de iniciar.\n";
-                continue;
-            }
-            string initAPP = "start " + defapp;
-
-            if (system(initAPP.c_str()) == 0)
-            {
-                cout << "Aplicativo iniciado com sucesso!\n\n";
-            }
-            else
-            {
-                cout << "Erro ao iniciar o aplicativo.\n";
-            }
-        }
-        else if (user == "def.script asm*" || user == "def.script assembly*")
-        {
-            if (memoriaasm == false)
-            {
-                cout << "Oloco\n";
-                Sleep(1500);
-                cout << "Desculpa, primeira vez que uma pessoa coloca esse comando, estou nervoso.\nVamo denovo, eu consigo!\n";
-                Sleep(4500);
-                system("cls");
-                cout << "Cpp:/>" << user << "\n";
-                Sleep(1000);
-                cout << "Ok...\n";
-                cout << "Voce quer definir um codigo assembly...\n";
-                Sleep(2000);
-                cout << "AHHHH NAO CONSIGO! ;(\n";
-                Sleep(2000);
-                cout << "Vamo denovo...\n";
-                Sleep(2000);
-                system("cls");
-                cout << "Cpp:/>" << user << "\n";
-                Sleep(1000);
-                cout << "Ok...\n";
-                Sleep(2000);
-                cout << "Agora é so perguntar...\n";
-                Sleep(2000);
-                cout << "Me de um nome...\n";
-                Sleep(1500);
-                cout << "ME DE O NOME DO ARQUIVO! falei errado, desculpa :(\nNOME DO ARQUIVO: ";
-                Sleep(1000);
-                getline(cin, defscriptASM);
-                Sleep(1000);
-                cout << "SALVEI!!!\n";
-                Sleep(1000);
-                cout << "Ok, agora é so falar onde eu salvei...\n";
-                Sleep(1500);
-                cout << "Ei, salvei no defscriptASM...\n";
-                Sleep(1500);
-                cout << "Use 'init.compile.script asm*' para compilar...\n";
-            }
-            else
-            {
-                cout << "Eu ja te falei que nao tem compilador de assembly aqui...\n";
-                Sleep(1000);
-                cout << "Desculpa :(\n";
-            }
-        }
-        else if (user == "init.compile.script asm*" || user == "init.compile.script assembly")
-        {
-            if (defscriptASM.empty())
-            {
-                cout << "Nenhum script asm foi definido, Use 'def.script asm*' antes de compilar.";
-            }
-
-            cout << "Eita...\n";
-            Sleep(1000);
-            cout << "Desculpa mas...\n";
-            Sleep(1000);
-            cout << "Nao tem compilador de assembly ainda...\n";
-            Sleep(1000);
-            cout << "Lembrei agora...\n";
-            Sleep(1000);
-            cout << "Me desculpa :(\n";
-
-            memoriaasm = true;
+            cout << "BasicBasic: " << version << "\n";
         }
         else if ((user == "desculpa" || user == "dicupa" || user == "mal" || user == "perdao" || user == "sorry") && secretvalor == true)
         {
@@ -547,105 +266,6 @@ int main()
             Sleep(2000);
             system("cls");
             secretvalor3 = false;
-        }
-        else if (user == "show.defscript*")
-        {
-            if (defscript.empty())
-            {
-                cout << "Nadinha...\n";
-            }
-            else
-            {
-                cout << defscript << "\n";
-            }
-        }
-        else if (user == "show.defscriptjava*")
-        {
-            if (defscriptJAVA.empty())
-            {
-                cout << "Nadinha...\n";
-            }
-            else
-            {
-                cout << defscriptJAVA << "\n";
-            }
-        }
-        else if (user == "show.defscriptcpp*")
-        {
-            if (defscriptCPP.empty())
-            {
-                cout << "Nadinha...\n";
-            }
-            else
-            {
-                cout << defscriptCPP << "\n";
-            }
-        }
-        else if (user == "show.defscriptc*")
-        {
-            if (defscriptC.empty())
-            {
-                cout << "Nadinha...\n";
-            }
-            else
-            {
-                cout << defscriptCPP << "\n";
-            }
-        }
-        else if (user == "show.defscriptpython*")
-        {
-            if (defscriptPYTHON.empty())
-            {
-                cout << "Nadinha...\n";
-            }
-            else
-            {
-                cout << defscriptPYTHON << "\n";
-            }
-        }
-        else if (user == "show.defscripthtml*")
-        {
-            if (defscriptHTML.empty())
-            {
-                cout << "Nadinha...\n";
-            }
-            else
-            {
-                cout << defscriptHTML << "\n";
-            }
-        }
-        else if (user == "show.defscripthtm*")
-        {
-            if (defscriptHTM.empty())
-            {
-                cout << "Nadinha...\n";
-            }
-            else
-            {
-                cout << defscriptHTM << "\n";
-            }
-        }
-        else if (user == "show.defscriptasm*")
-        {
-            if (defscriptASM.empty())
-            {
-                cout << "Nadinha...\n";
-            }
-            else
-            {
-                cout << defscriptASM << "\n";
-            }
-        }
-        else if (user == "show.defapp*")
-        {
-            if (defapp.empty())
-            {
-                cout << "Nadinha...\n";
-            }
-            else
-            {
-                cout << defapp << "\n";
-            }
         }
         else if (user == "show.disco*")
         {
@@ -743,6 +363,12 @@ int main()
             {
                 cout << "Erro!\n";
             }
+        }
+        else if (user.find("cmd* ") == 0)
+        {
+            string rodarcmdter = user.substr(5);
+
+            system(rodarcmdter.c_str());
         }
         else if (user == "other.cmd-loop*")
         {
@@ -870,6 +496,64 @@ int main()
 
             system(rodarhtm.c_str());
         }
+        else if (user.find("js ") == 0)
+        {
+            string filenamejs = user.substr(3);
+
+            ifstream jsarquivo(filenamejs + ".js");
+            ofstream htmlarquivo("indexjsjs.html");
+
+            htmlarquivo << "<script>\n"
+                        << jsarquivo.rdbuf() << "\n</script>";
+            htmlarquivo.close();
+            system("start indexjsjs.html");
+        }
+        else if (user.find("javascript ") == 0)
+        {
+            string filenamejss = user.substr(11);
+
+            ifstream jssarquivo(filenamejss + ".js");
+            ofstream htmllarquivo("indexjsjs.html");
+
+            htmllarquivo << "<script>\n"
+                         << jssarquivo.rdbuf() << "\n</script>";
+            htmllarquivo.close();
+            system("start indexjsjs.html");
+        }
+        else if (user.find("asm ") == 0)
+        {
+            if (memoriaasm == false)
+            {
+                string asmnome = user.substr(4);
+                string asmreal = asmnome + ".asm";
+                cout << "Oloco\n";
+                Sleep(1500);
+                cout << "Desculpa";
+                Sleep(1500);
+                cout << ", eh que ninguem nunca me pediu para compilar assembly...\n";
+                Sleep(1500);
+                cout << "Tá...";
+                Sleep(1500);
+                cout << " voce quer compilar o script " << asmreal << "\n";
+                Sleep(1500);
+                cout << "compilando...\n";
+                Sleep(1500);
+                cout << "erro\n";
+                Sleep(1500);
+                cout << "Vamos denovo...\n";
+                Sleep(1500);
+                cout << "erro\n";
+                Sleep(1500);
+                cout << "Eita, esqueci que nao consigo rodar assembly :(\n";
+                Sleep(1500);
+                cout << "Desculpa... :(\n";
+                memoriaasm = true;
+            }
+            else
+            {
+                cout << "Nao consigo compilar, desculpa :(\n";
+            }
+        }
         else if (user.find("system ") == 0)
         {
             string namesys = user.substr(7);
@@ -923,9 +607,115 @@ int main()
         {
             cout << "FUTEBOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOL!\n";
         }
-        else if (user == "'help'" && secretmemeaspas == true) {
+        else if (user == "'help'" && secretmemeaspas == true)
+        {
             cout << "Rapaz...\n";
             cout << "Eu acho que eh sem aspas\n";
+        }
+        else if (user.find("new.cpp ") == 0 || user.find("new.c++") == 0)
+        {
+            string newcpp = user.substr(8);
+            ofstream arnovocpp(newcpp + ".cpp");
+            if (arnovocpp.is_open())
+            {
+                arnovocpp << "#include <iostream>\n";
+                arnovocpp << "using namespace std;\n";
+                arnovocpp << "\n";
+                arnovocpp << "int main() {\n";
+                arnovocpp << "  cout << \"Hello, World!\" << endl;\n";
+                arnovocpp << "  return 0;\n";
+                arnovocpp << "}";
+                arnovocpp.close();
+                cout << "Sucesso!\n";
+            }
+            else
+            {
+                cout << "Erro!\n";
+            }
+        }
+        else if (user.find("new.py ") == 0)
+        {
+            string newpy = user.substr(7);
+            ofstream arnovopy(newpy + ".py");
+            if (arnovopy.is_open())
+            {
+                arnovopy << "print(\"Hello, World!\")";
+                arnovopy.close();
+                cout << "Sucesso!\n";
+            }
+            else
+            {
+                cout << "Erro!\n";
+            }
+        }
+        else if (user.find("new.python ") == 0)
+        {
+            string newpyy = user.substr(11);
+            ofstream arnovopyy(newpyy + ".py");
+            if (arnovopyy.is_open())
+            {
+                arnovopyy << "print(\"Hello, World!\")";
+                arnovopyy.close();
+                cout << "Sucesso!\n";
+            }
+            else
+            {
+                cout << "Erro!\n";
+            }
+        }
+        else if (user.find("new.js ") == 0)
+        {
+            string newjs = user.substr(7);
+            ofstream arnovopjs(newjs + ".js");
+            if (arnovopjs.is_open())
+            {
+                arnovopjs << "console.log(\"Hello, World!\");";
+                arnovopjs.close();
+                cout << "Sucesso!\n";
+            }
+            else
+            {
+                cout << "Erro!\n";
+            }
+        }
+        else if (user.find("new.java ") == 0)
+        {
+            string newjava = user.substr(9);
+            ofstream arnovopjava(newjava + ".java");
+            if (arnovopjava.is_open())
+            {
+                arnovopjava << "public class " << newjava << "{\n";
+                arnovopjava << "    public static void main(String[] args) {\n";
+                arnovopjava << "        System.out.println(\"Hello, World!\");\n";
+                arnovopjava << "    }\n";
+                arnovopjava << "}";
+                arnovopjava.close();
+                cout << "Sucesso!\n";
+            }
+            else
+            {
+                cout << "Erro!\n";
+            }
+        }
+        else if (user.find("new.c ") == 0)
+        {
+            string newc = user.substr(6);
+            ofstream arnovoc(newc + ".c");
+            if (arnovoc.is_open())
+            {
+                arnovoc << "#include <stdio.h>\n";
+                arnovoc << "\n";
+                arnovoc << "int main() {\n";
+                arnovoc << "    printf(\"Hello, World!\");\n";
+                arnovoc << "    return 0;\n";
+                arnovoc << "}";
+                arnovoc.close();
+                cout << "Sucesso!\n";
+            }
+            else
+            {
+                cout << "Erro!\n";
+            }
         }
         else
         {
