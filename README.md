@@ -7,7 +7,7 @@
 ## O que é: 
 - BasicBasic é um terminal focado na programação, resumindo: para programadores.
 
-- O BasicBasic é bom para programadores pois tem compilador de **Python**, **C++**, e **Java**.
+- O BasicBasic é bom para programadores pois tem compilador de **Python**, **C++**, **C**, **HTML**/**HTM**, **Javascript** e **Java**.
 
 - Nele tem como usar o **Git Commit**, **Git Status**, **Git Clone** e **Git Push**.
 
