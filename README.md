@@ -15,10 +15,9 @@
 - Criar pastas
 - Criar arquivos
 - Ver informações do computador
-- Poder usar o tasklist
-- Poder usar o Dir
 - Ter o modo escuro e o modo claro
 - Compilar codigos
+- Todos os comandos do Prompt De Comando (CMD)
 - etc.
 
 ## Ajuda: 
@@ -42,18 +41,19 @@
     
 ## Guia de comandos:
   - ``cpp Main`` - Executa o arquivo Main.cpp.
+  - ``c Main`` - Executa o arquivo Main.c.
   - ``java Main`` - Executa o arquivo Main.java/class.
   - ``py Main`` - Executa o arquivo Main.py.
   - ``html Main`` - Executa o arquivo Main.html.
   - ``htm Main`` - Executa o arquivo Main.htm.
-
-  se você quiser ir no jeito TRADICIONAL, use ``def.script cpp*`` para definir um script, dai você coloca o nome do arquivo quando executar o comando, dai você poderá compilar usando o comando: ``init.compile.script cpp``, se quiser trocar a versão, você pode trocar o "cpp" para **py** ou **java**.
+  - ``js Main`` - Executa o arquivo Main.js.
 
   Você pode usar o terminal (Prompt De Comandos / cmd) usando os comandos: 
 
   - ``othe.cmd*`` - Imita o terminal uma vez.
   - ``other.cmd-loop*`` - Imita o terminal em loop (digite stop para sair do terminal).
   - ``other.cmd-diret*`` - Deixa você executar o terminal apenas pelo codigo, exemplo: ``other.cmd-diret*echo Hello, World!`` - Irá aparecer um texto escrito: "Hello, World!".
+  - ``cmd* `` - Deixa você executar o terminal apenas pelo codigo, exemplo: ``cmd* echo Hello, World!`` - Irá aparecer um texto escrito: "Hello, World!".
 
   Você pode ver o valor de uma string usando o comando: 
 
@@ -61,7 +61,7 @@
 
   Exemplo: 
 
-  ``Show.defscriptCPP`` - Mostra o valor da string defscriptPYTHON (o nome do arquivo que eu defini).
+  ``Show.disco`` - Mostra o valor da string disco (Cpp:/>).
 
   Você pode trocar a cor do terminal usando esse comando: 
   - ``Color`` - Troca a cor.
